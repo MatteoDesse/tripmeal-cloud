@@ -1,6 +1,6 @@
 FROM python:3.7-slim
-RUN mkdir -p /app && \
-mkdir -p /app/templates && \
+RUN mkdir -p /app & \
+mkdir -p /app/templates & \
 mkdir -p /app/static
 RUN /usr/local/bin/python -m pip install --upgrade pip
 COPY ./static /app/static/
