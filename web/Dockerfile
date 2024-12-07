@@ -9,4 +9,5 @@ COPY requirements.txt /app/
 WORKDIR /app
 RUN pip install -r requirements.txt
 COPY app.py dbconnect.py /app/
-ENTRYPOINT ENTRYPOINT ["/usr/local/bin/python", "app.py"] # COMPLETE THIS DOCKERFILE
+ENTRYPOINT ["python", "app.py"]
+ # COMPLETE THIS DOCKERFILE
