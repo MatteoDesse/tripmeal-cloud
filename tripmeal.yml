@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: europe-west1-docker.pkg.dev/gq-cloud-computing/matteorepo/tripmeal-web:1.0
+      - image: europe-west1-docker.pkg.dev/gq-cloud-computing/matteorepo/matapp-web:1.0
         name: web
         ports:
         - containerPort: 5000
