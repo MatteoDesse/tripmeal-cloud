@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/repo-matteo/mat-app-image-name:1.0
+      - image: europe-west1-docker.pkg.dev/gq-cloud-computing/matteorepo/mat-app-web:1.0
         name: web
         ports:
         - containerPort: 5000
@@ -80,8 +80,8 @@ spec:
         service: db
     spec:
       containers:
-      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/repo-matteo/mat-app-image-name:1.0
-        name: db
+      - image: europe-west1-docker.pkg.dev/gq-cloud-computing/matteorepo/mat-app-web:1:0
+        name: web
         ports:
         - containerPort: 3306
         volumeMounts:
