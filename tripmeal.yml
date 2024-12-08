@@ -81,7 +81,7 @@ spec:
     spec:
       containers:
       - image: europe-west1-docker.pkg.dev/gq-cloud-computing/matteorepo/mat-app-web:1:0
-        name: web
+        name: db
         ports:
         - containerPort: 3306
         volumeMounts:
