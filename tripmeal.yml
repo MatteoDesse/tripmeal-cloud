@@ -5,8 +5,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 5000
-    targetPort: 5000
+  - port: 5100
+    targetPort: 5100
     protocol: TCP
   selector:
     app: tripmeal
@@ -32,7 +32,7 @@ spec:
       - image: europe-west1-docker.pkg.dev/gq-cloud-computing/matteorepo/mat-app-web:1.0
         name: web
         ports:
-        - containerPort: 5000
+        - containerPort: 5100
           protocol: TCP
         env:
         - name: DATABASE_NAME
@@ -48,7 +48,7 @@ spec:
         - name: TRIPMEAL_KEY
           value: "my-secret-key"
         - name: SERVER_PORT
-          value: "5000"
+          value: "5100"
 ---
 apiVersion: v1
 kind: Service
